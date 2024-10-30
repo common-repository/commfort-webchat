@@ -1,0 +1,290 @@
+/* $Id$ */
+
+#users_list {
+  overflow: auto; 
+  height: 300px;
+}
+
+#users_list ul {
+  margin: 0 !important;
+  padding: 0px;
+}
+
+.all_users_count {
+  margin-bottom: 6px;
+}
+
+#curr_user {
+  border: 1px solid #000;
+  padding: 5px;
+  margin-bottom: 3px;
+}
+
+#curr_user .name{
+  padding-left: 20px;
+  line-height: 20px;
+  float: left;
+  width: 100px;
+}
+
+#curr_user .channel{
+  float: right;
+}
+
+#curr_user select{
+  width: 60px;
+}
+
+#curr_user .state{
+ clear: both;
+ line-height: 15px;
+}
+
+#curr_user .state img{
+ vertical-align: middle;
+}
+
+#curr_user .state span{
+ cursor: pointer;
+ font-size: 10px;
+}
+
+#users_list ul li {
+  display: block;
+  padding: 0px; 
+  margin: 0px; 
+  line-height: 20px;  
+  position: relative; 
+}
+
+#users_list .user_info {
+  display: none;
+  padding: 3px 7px 4px 6px;
+  border: 1px dotted #336;
+  font-size: 11px;
+  text-align: left;
+  color: #000;
+}
+
+.channel_topic {
+  background-color: #B3B3FF; 
+  margin: 0px; 
+  padding: 0px; 
+  text-align: center; 
+  display: block;
+  line-height: 20px;
+}
+
+.connection_state {
+  margin: 0px; 
+  padding: 0px 5px; 
+  text-align: center; 
+  display: none;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.unstable_conn{
+  background-color: #FDFF00;
+  color: #000;
+}
+
+.unactive_conn{
+  background-color: #FF512F;
+  color: #fff;
+}
+
+.channel_topic p{
+  color: #fff;
+  margin-top: 0px;
+}
+
+#messages_list {
+  margin-top: 5px;
+  overflow: auto; 
+  height: 600px;
+  font-size: 12px;
+}
+
+#send_block textarea {
+  margin: 0px;
+  width: 100%;
+  height: 40px;
+}
+
+table#send_block {
+  width: 100%;
+  border: 0px;
+  margin-top: 0px;
+  height: 40px;
+}
+
+#send_block tbody, #send_block tbody tr, #send_block tbody tr td {
+  border: 0px !important;
+}
+
+#send_block .smilies {
+  overflow: auto; 
+  height: 200px;
+  width: 100%;
+  display: none;
+}
+
+.send_row td {
+  padding: 5px !important; 
+}
+
+.send_but p {
+  padding: 0;
+  margin: 0 !important;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+td.send_but {
+  vertical-align: middle;
+  width: 94px;
+  text-align: center;
+}
+
+input#send {
+  line-height: 14px;
+  margin: 0;
+  font-size: 12px;
+}
+
+.send_state_text {
+  display: none;
+  /*background-color: #F9F8F1;*/
+  text-align: center;
+}
+
+.addit_btns {
+  vertical-align: top;
+  width: 45px;
+}
+
+.addit_btns img {
+  cursor: pointer;
+  margin: 0px;
+  border: 0px;
+  vertical-align: top;
+}
+
+.single_message, .single_system_message {
+  /*background-color: #F9F8F1;*/
+  border-bottom: 1px solid #EFEFEF;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.single_message img{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  vertical-align: bottom;
+}
+
+.msg_time {
+  float: right;
+  margin: 0px 5px;
+  font-size: 9px;
+  font-style: italic;
+}
+
+.from_web {
+  display: inline-block;
+  padding-left: 20px;
+  background: url("./images/from_web.png") no-repeat scroll 0 0 transparent;
+}
+
+.nick_paste{
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.single_message .nick_paste:hover {
+  text-decoration: none;
+}
+
+
+.single_system_message {
+  font-size: 12px; 
+  font-style: italic;
+}
+
+.single_user a
+{
+  padding-left: 20px;
+}
+
+.woman {
+  background: url('./images/woman_icon.png') transparent no-repeat !important;
+}
+
+.man {
+  background: url('./images/man_icon.png') transparent no-repeat !important;
+}
+
+.addit_btns img:hover{
+  outline: 1px solid black;
+}
+
+.addit_btns img:active{
+  outline: 2px solid black;
+}
+
+.addit_btns .smilies_but{
+  margin-bottom: 6px;
+}
+
+.cf_sm_list {
+  display: none;
+  height: 80px;
+  overflow-y: scroll;
+  margin-top: 5px;
+}
+
+.cf_sm_list img{
+  cursor: pointer;
+  border: none;
+  margin: 0px 5px 5px 5px;
+}
+
+#smilies_block span {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#smilies_block p {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+#smilies_block span:hover {
+  border-bottom: 1px solid #AFAFAF !important; 
+}
+
+#settings_block, #smilies_block {
+  display: none;
+  margin-top: 5px;
+  border-top: 1px solid #EFEFEF;
+  border-bottom: 1px solid #EFEFEF;
+  padding: 2px 0px;
+}
+
+#settings_block input{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  vertical-align: middle;
+}
+
+#settings_block label{
+  vertical-align: middle;
+}
+
+#settings_block div{
+  display: inline;
+}
